@@ -1,6 +1,14 @@
 ```html
-<script src="https://unpkg.com/reasonml-in-browser/reasonml-in-browser.js"></script>
+<script src="https://unpkg.com/reasonml-in-browser/index.js"></script>
+```
 
+or
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/reasonml-in-browser/index.js"></script>
+```
+
+```html
 <script type="text/reason">
 type dataLoadingStatusVariant =
   | Loading
