@@ -36,11 +36,13 @@ getscript('https://reasonml.github.io/bs.js', function(err1, res) {
   getscript('https://reasonml.github.io/refmt.js', function(err2, res) {
     if (err2) throw err2
 
-    Array.from(document.getElementsByTagName('script'))
-      .filter(script => script.getAttribute('type') === 'text/reason')
-      .forEach(script => {
-        evaluateReasonML(script.innerHTML)
-      })
+    document.addEventListener('DOMContentLoaded', function() {
+      Array.from(document.getElementsByTagName('script'))
+        .filter(script => script.getAttribute('type') === 'text/reason')
+        .forEach(script => {
+          evaluateReasonML(script.innerHTML)
+        })
+    })
   })
 })
 
