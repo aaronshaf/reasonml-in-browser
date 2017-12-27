@@ -9,9 +9,7 @@
   "repository": "https://github.com/aaronshaf/reasonml-in-browser.git",
   "author": "Aaron Shafovaloff <aaronshaf@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "getscript": "^0.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "microbundle": "^0.2.4"
   }
