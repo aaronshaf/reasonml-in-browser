@@ -43,3 +43,5 @@ getscript('https://reasonml.github.io/bs.js', function(err1, res) {
       })
   })
 })
+
+window.exports = window.exports || {}
