@@ -31,12 +31,12 @@ function evaluateReasonML(code) {
   eval(js)
 }
 
-getscript('https://reasonml.github.io/bs.js', function(err1, res) {
-  if (err1) throw err1
-  getscript('https://reasonml.github.io/refmt.js', function(err2, res) {
-    if (err2) throw err2
+document.addEventListener('DOMContentLoaded', function() {
+  getscript('https://reasonml.github.io/bs.js', function(err1, res) {
+    if (err1) throw err1
+    getscript('https://reasonml.github.io/refmt.js', function(err2, res) {
+      if (err2) throw err2
 
-    document.addEventListener('DOMContentLoaded', function() {
       Array.from(document.getElementsByTagName('script'))
         .filter(script => script.getAttribute('type') === 'text/reason')
         .forEach(script => {
