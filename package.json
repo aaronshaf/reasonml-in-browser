@@ -1,6 +1,6 @@
 {
   "name": "reasonml-in-browser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "build": "microbundle --output build",
@@ -13,5 +13,9 @@
   "devDependencies": {
     "microbundle": "^0.2.4"
   },
-  "keywords": ["reason", "reasonml", "bucklescript"]
+  "keywords": [
+    "reason",
+    "reasonml",
+    "bucklescript"
+  ]
 }
