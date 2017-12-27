@@ -1,5 +1,5 @@
 ```html
-<script src="https://unpkg.com/reasonml-in-browser/index.js"></script>
+<script src="https://unpkg.com/reasonml-in-browser"></script>
 ```
 
 or
