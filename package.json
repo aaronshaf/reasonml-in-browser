@@ -12,5 +12,6 @@
   "dependencies": {},
   "devDependencies": {
     "microbundle": "^0.2.4"
-  }
+  },
+  "keywords": ["reason", "reasonml", "bucklescript"]
 }
