@@ -1,0 +1,18 @@
+{
+  "name": "reasonml-in-browser",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "microbundle --output build",
+    "dev": "microbundle watch --output build"
+  },
+  "repository": "https://github.com/aaronshaf/reasonml-in-browser.git",
+  "author": "Aaron Shafovaloff <aaronshaf@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "getscript": "^0.1.0"
+  },
+  "devDependencies": {
+    "microbundle": "^0.2.4"
+  }
+}
