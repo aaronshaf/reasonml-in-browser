@@ -1,0 +1,34 @@
+<html>
+
+<head>
+  <script src="http://localhost:8080/build/reasonml-in-browser.js"></script>
+</head>
+
+<body>
+  <script type="text/reason">
+    /* Lists can only have one type of element */
+    let listOfNumbers = [1, 2, 3];
+    
+    let listOfStrings = ["a", "b", "c"]; /* invalid: [1, '2', 3.4] */
+    
+    /* Add element to list by "prepending".
+       This means adding an element to the beginning.
+       This is super fast. */
+    let anotherList = [0, ...listOfNumbers];
+    
+    /* Lists are "singly linked lists" */
+    Js.log(listOfStrings); /* [ 'a', [ 'b', [ 'c', 0 ] ] ] */
+    
+    /* list -> array (prettier when printed) */
+    listOfStrings |> Array.of_list |> Js.log; /* [ 'a', 'b', 'c' ] */
+    
+    /* Same as */
+    Js.log(Array.of_list(listOfStrings));
+    
+    /* Same as */
+    listOfStrings |> Array.of_list |> Js.log;
+  </script>
+  <pre id="compiled-javascript"></pre>
+</body>
+
+</html>
