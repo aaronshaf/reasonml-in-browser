@@ -1,4 +1,4 @@
-importScripts('https://reasonml.github.io/stdlibBundle.js')
+importScripts('https://reasonml.github.io/js/stdlibBundle.js')
 
 const _console = console
 

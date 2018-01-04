@@ -38,15 +38,18 @@ function evaluateReasonML(code) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  getscript('https://reasonml.github.io/bs.js', (err1, res) => {
+  getscript('https://reasonml.github.io/js/bs.js', (err1, res) => {
     if (err1) throw err1
-    getscript('https://reasonml.github.io/refmt.js', (err2, res) => {
+    getscript('https://reasonml.github.io/js/refmt.js', (err2, res) => {
       if (err2) throw err2
 
-      getscript('https://reasonml.github.io/stdlibBundle.js', (err3, res) => {
-        if (err3) throw err3
-        main()
-      })
+      getscript(
+        'https://reasonml.github.io/js/stdlibBundle.js',
+        (err3, res) => {
+          if (err3) throw err3
+          main()
+        }
+      )
     })
   })
 })
@@ -57,7 +60,7 @@ function main() {
   let errorTimerId
 
   const workerScript = `
-    importScripts('https://reasonml.github.io/stdlibBundle.js')
+    importScripts('https://reasonml.github.io/js/stdlibBundle.js')
 
     const _console = console
     
