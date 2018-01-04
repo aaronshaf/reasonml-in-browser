@@ -1,6 +1,6 @@
 {
   "name": "reasonml-in-browser",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "index.js",
   "scripts": {
     "build": "microbundle --output build",
